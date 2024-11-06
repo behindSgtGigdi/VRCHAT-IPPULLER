@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|c:\\users\\sgtgi\\downloads\\vrchat-ippuller-main\\sourcecode\\gigdipullerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:gigdipullerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|c:\\users\\sgtgi\\downloads\\vrchat-ippuller-main\\sourcecode\\gigdipullerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:gigdipullerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepuller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:instancepuller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|c:\\users\\sgtgi\\downloads\\vrchat-ippuller-main\\sourcecode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|c:\\users\\sgtgi\\downloads\\vrchat-ippuller-main\\sourcecode\\instancepuller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:instancepuller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|c:\\users\\sgtgi\\downloads\\vrchat-ippuller-main\\sourcecode\\instancepullercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:instancepullercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepullercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{54A9A1D1-1341-4FCE-A8FF-A91C44A8C82E}|GigdiPuller.csproj|solutionrelative:instancepullercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:14:28.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "instancepuller.cs",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepuller.cs",
+              "RelativeDocumentMoniker": "instancepuller.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepuller.cs",
+              "RelativeToolTip": "instancepuller.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAArwJMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:21:55.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "instancepullercreator.cs",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepullercreator.cs",
+              "RelativeDocumentMoniker": "instancepullercreator.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepullercreator.cs",
+              "RelativeToolTip": "instancepullercreator.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAADgv4wAAAA2AQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T20:48:09.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "instancepuller.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepuller.cs",
+              "RelativeDocumentMoniker": "instancepuller.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepuller.cs [Design]",
+              "RelativeToolTip": "instancepuller.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T19:38:12.36Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "gigdipullerlogin.cs",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\gigdipullerlogin.cs",
+              "RelativeDocumentMoniker": "gigdipullerlogin.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\gigdipullerlogin.cs",
+              "RelativeToolTip": "gigdipullerlogin.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAlwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:12:04.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "gigdipullerlogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\gigdipullerlogin.cs",
+              "RelativeDocumentMoniker": "gigdipullerlogin.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\gigdipullerlogin.cs [Design]",
+              "RelativeToolTip": "gigdipullerlogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:12:03.604Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "instancepullercreator.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepullercreator.cs",
+              "RelativeDocumentMoniker": "instancepullercreator.cs",
+              "ToolTip": "C:\\Users\\sgtgi\\Downloads\\VRCHAT-IPPULLER-main\\SOURCECODE\\instancepullercreator.cs [Design]",
+              "RelativeToolTip": "instancepullercreator.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T19:38:14.796Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
