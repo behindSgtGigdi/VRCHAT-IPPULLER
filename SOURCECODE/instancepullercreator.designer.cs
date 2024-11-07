@@ -414,7 +414,7 @@ namespace GigdiPuller
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(183, 19);
             this.label11.TabIndex = 57;
-            this.label11.Text = "Can be \"invite\" or \"other\"";
+            this.label11.Text = "Enter a valid youtube URL";
             // 
             // instanceid
             // 
