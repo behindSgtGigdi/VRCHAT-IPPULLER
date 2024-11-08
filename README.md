@@ -1,20 +1,30 @@
-<div align=center>
+<div align="center">
 
-  ### SgtGigdi VRCHAT IP Puller
-  
+# SgtGigdi VRCHAT IP Puller
+
 </div>
+
 <br>
 
-### Supported languages:
- - [x] English
+## Supported Languages:
+- [x] English
 
 More languages coming soon!
 
-### About the Application:
-This application allows you to create custom endpoints by interacting with the API and pull users' IPs on VRChat.
+---
 
-### Getting Started:
-*NOT FINISHED BUT The Beta Build Is Out Now.*
+## About the Application:
+This tool allows you to create custom endpoints that interact with an API to pull users' IP addresses on VRChat. It is built for managing user interactions and monitoring network activity.
 
-Join our Discord community to get started, receive tutorials, and ask for help!
+---
+
+## Getting Started:
+*⚠️ The Beta Build Is Out Now, but it's not fully finished.*
+
+Join our Discord community to:
+- Get started with the application
+- Access tutorials and guides
+- Receive help and support
+
 [Join the Discord](https://discord.gg/7cyrKZcj8W)
+
