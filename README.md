@@ -14,7 +14,7 @@ More languages coming soon!
 ---
 
 ## About the Application:
-This tool allows you to create custom endpoints that interact with an API to pull users' IP addresses on VRChat. It is built for managing user interactions and monitoring network activity.
+This tool allows you to create custom endpoints that interact with an API to pull users' IP addresses on VRChat.
 
 ---
 
