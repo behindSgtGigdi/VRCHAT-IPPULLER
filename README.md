@@ -1,6 +1,6 @@
 <div align=center>
 
-  ### SgtGigdi VRCHAT ip puller is an IP Puller for vrchat similar to xresolver an xbox IP puller it logs all IPS to a database which you can search later.
+  ### SgtGigdi VRCHAT IP Puller
   
 </div>
 <br>
@@ -8,9 +8,13 @@
 ### Supported languages:
  - [x] English
 
-More languages soon to come
+More languages coming soon!
 
-Join discord to start pulling.
+### About the Application:
+This application allows you to create custom endpoints by interacting with the API and pull users' IPs on VRChat.
+
+### Getting Started:
 *NOT FINISHED BUT The Beta Build Is Out Now.*
-Join discord for help + tutorial and more
-https://discord.gg/7cyrKZcj8W
+
+Join our Discord community to get started, receive tutorials, and ask for help!
+[Join the Discord](https://discord.gg/7cyrKZcj8W)
