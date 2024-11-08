@@ -96,20 +96,19 @@ namespace GigdiPuller
                             // Check if login is successful based on the 'status' field
                             if (responseData.status == true)
                             {
-                                // Check if the user is banned
-                                if (responseData.banned == true)
-                                {
-                                    // If banned, show a message and return false
-                                    MessageBox.Show($"You have been banned. Reason: {responseData.banReason}\nDuration: {responseData.banDuration} days", "Banned", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    return false;
-                                }
-
                                 // Login is successful, cookies are stored in the shared CookieContainer
                                 MessageBox.Show(responseData.message.ToString(), "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 return true;
                             }
+                            else if (responseData.banStatus != null && responseData.banStatus.isBanned)
+                            {
+                                // User is banned
+                                MessageBox.Show($"You are banned.\nReason: {responseData.banStatus.reason}\nDuration: {responseData.banStatus.duration} days", "Banned", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return false;
+                            }
                             else
                             {
+                                // Login error or other case
                                 MessageBox.Show(responseData.message.ToString(), "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return false;
                             }
@@ -129,6 +128,7 @@ namespace GigdiPuller
                 }
             }
         }
+
 
         private void Login_Load(object sender, EventArgs e)
         {
