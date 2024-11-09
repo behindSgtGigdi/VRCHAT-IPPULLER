@@ -92,7 +92,7 @@ namespace GigdiPuller
                             user2ID.Text = userId2;         // Display userId
                             user2ip.Text = ip;             // Display IP
                             InstanceID.Text = endpointId;    // Display endpoint ID
-                            user2timestamp.Text = timestamp; // Display timestamp (make sure you have a label for this)
+                            user2timestamp.Text = timestamp; // Display timestamp 
                         }
                         else
                         {
