@@ -25,6 +25,6 @@ Join our Discord community to:
 - Get started with the application
 - Access tutorials and guides
 - Receive help and support
-
+[Here alternatively is the website to also access the API online](https://vrchatapi.onrender.com)
 [Join the Discord](https://discord.gg/7cyrKZcj8W)
 
