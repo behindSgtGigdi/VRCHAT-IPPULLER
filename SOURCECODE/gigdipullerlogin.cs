@@ -51,6 +51,7 @@ namespace GigdiPuller
             else
             {
                 //incorrect information
+                return;
             }
         }
 
