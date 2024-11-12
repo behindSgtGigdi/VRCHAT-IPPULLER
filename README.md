@@ -17,7 +17,6 @@ More languages coming soon!
 This tool allows you to create custom endpoints that interact with an API to pull users' IP addresses on VRChat.
 
 ---
-
 ## Getting Started:
 *⚠️ The Beta Build Is Out Now, but it's not fully finished.*
 
