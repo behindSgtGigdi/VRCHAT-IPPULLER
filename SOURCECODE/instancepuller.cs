@@ -53,57 +53,72 @@ namespace GigdiPuller
 
         private async void button2_Click(object sender, EventArgs e)
         {
-            string instanceid = instance.Text;  // Get instance ID from textbox
+            string instanceid = instance.Text;
 
-            // Create an instance of HttpClientHandler to include cookies
-            using (HttpClientHandler handler = new HttpClientHandler())
+            if (string.IsNullOrEmpty(instanceid))
             {
-                // Use a handler to include the cookies from the current session
-                handler.CookieContainer = CookieHelper.CookieContainer; // Use the cookies stored in the shared container
+                MessageBox.Show("Please enter an instance ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                using (HttpClient client = new HttpClient(handler))
+            using (HttpClientHandler handler = new HttpClientHandler { CookieContainer = CookieHelper.CookieContainer })
+            using (HttpClient client = new HttpClient(handler))
+            {
+                try
                 {
-                    try
+                    string url = $"https://vrchatapi.onrender.com/vrchat/api/v1/track/{instanceid}";
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (!response.IsSuccessStatusCode)
                     {
-                        // Construct the tracking URL with the endpoint ID
-                        string url = "https://vrchatapi.onrender.com/vrchat/api/v1/track/" + instanceid;
+                        string errorContent = await response.Content.ReadAsStringAsync();
+                        dynamic errorResult = JsonConvert.DeserializeObject(errorContent);
 
-                        // Send GET request to the tracking API with cookies
-                        HttpResponseMessage response = await client.GetAsync(url);
-                        response.EnsureSuccessStatusCode();
-
-                        // Deserialize the JSON response
-                        string result = await response.Content.ReadAsStringAsync();
-                        dynamic results = JsonConvert.DeserializeObject(result);
-
-                        // Check if the 'pulled' array exists and has data
-                        if (results.pulled != null && results.pulled.Count > 0)
+                        if (response.StatusCode == HttpStatusCode.Forbidden && errorResult?.error != null)
                         {
-                            // Assuming the response contains a 'pulled' array with the tracking data
-                            var pulledData = results.pulled[0];  // Grab the first item in the array
-
-                            // Extract the required fields: userId, ip, endpointId, timestamp
-                            string userId2 = pulledData.userId;
-                            string ip = pulledData.ip;
-                            string endpointId = pulledData.endpointId;
-                            string timestamp = pulledData.timestamp;
-
-                            // Display the extracted data in the form's labels or textboxes
-                            user2ID.Text = userId2;         // Display userId
-                            user2ip.Text = ip;             // Display IP
-                            InstanceID.Text = endpointId;    // Display endpoint ID
-                            user2timestamp.Text = timestamp; // Display timestamp 
+                            MessageBox.Show($"Error: {errorResult.error}", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Activate a 12-hour key on our website for free, by logging in on the website and click VRChat puller and completing the steps.");
+                            Process.Start("https://vrchatapi.onrender.com");
+                        }
+                        else if (response.StatusCode == HttpStatusCode.NotFound && errorResult?.error == "Temporary endpoint not found.")
+                        {
+                            MessageBox.Show("The temporary endpoint was not found. Please verify the instance ID.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else if (response.StatusCode == HttpStatusCode.NotFound)
+                        {
+                            MessageBox.Show("The specified instance ID was not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
-                            MessageBox.Show("No data found for the given instance or tracking information is unavailable.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("The API is currently unreachable. Please try again later.", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+
+                        return;
                     }
-                    catch (Exception ex)
+
+                    string result = await response.Content.ReadAsStringAsync();
+                    dynamic results = JsonConvert.DeserializeObject(result);
+
+                    if (results.pulled != null && results.pulled.Count > 0)
                     {
-                        // Handle any exceptions (e.g., network issues, invalid instance, etc.)
-                        MessageBox.Show($"Error: {ex.Message}", "Tracking Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        var pulledData = results.pulled[0];
+                        user2ID.Text = pulledData.userId;
+                        user2ip.Text = pulledData.ip;
+                        InstanceID.Text = pulledData.endpointId;
+                        user2timestamp.Text = pulledData.timestamp;
                     }
+                    else
+                    {
+                        MessageBox.Show("No data found for this instance. Try pulling again", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (HttpRequestException)
+                {
+                    MessageBox.Show("Connection error. Please check your internet and try again.", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

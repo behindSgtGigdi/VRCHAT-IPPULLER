@@ -66,8 +66,8 @@ namespace GigdiPuller
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string userId = userid.Text; // Get user ID from the input field
-            string youtubeUrl = method.Text; // Get YouTube URL from the input field
+            string userId = userid.Text;
+            string youtubeUrl = method.Text;
 
             if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(youtubeUrl))
             {
@@ -77,47 +77,56 @@ namespace GigdiPuller
 
             try
             {
-                // Create the API URL with query parameters
                 string apiUrl = $"https://vrchatapi.onrender.com/vrchat/api/v1/create-endpoint?userId={userId}&youtubeUrl={Uri.EscapeDataString(youtubeUrl)}";
-
-                // Use a handler to include the cookies from the current session
                 var handler = new HttpClientHandler();
-                handler.CookieContainer = CookieHelper.CookieContainer; // Use the cookies stored in the shared container
+                handler.CookieContainer = CookieHelper.CookieContainer;
 
                 using (HttpClient client = new HttpClient(handler))
                 {
-                    // Send the GET request with the session cookie
                     HttpResponseMessage response = await client.GetAsync(apiUrl);
-                    response.EnsureSuccessStatusCode(); // Throws an exception if the status code is not successful
 
-                    // Read and parse the response
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        string errorContent = await response.Content.ReadAsStringAsync();
+                        dynamic errorResult = JsonConvert.DeserializeObject(errorContent);
+
+                        if (response.StatusCode == HttpStatusCode.Forbidden)
+                        {
+                            MessageBox.Show($"Error: {errorResult.error}", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Activate a 12-hour key on our website for free, by logging in on the website and click VRChat puller and completing the steps.");
+                            Process.Start("https://vrchatapi.onrender.com");
+                        }
+                        else
+                        {
+                            MessageBox.Show("The API appears to be offline or the information inputted for generation is incorrect.  Please try again later.", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                        return;
+                    }
+
                     string responseContent = await response.Content.ReadAsStringAsync();
                     dynamic result = JsonConvert.DeserializeObject(responseContent);
 
-                    // Get the relevant values from the response
                     string grabUrl = result.grabUrl;
                     string trackUrl = result.trackUrl;
                     string endpointId = result.endpointId;
 
-                    // Display or use these values
-                    instanceid.Text = endpointId; // Set the instance ID in the corresponding textbox
-                    label8.Text = "Youtube URL: " + youtubeUrl; // Optionally set the YouTube URL or any other relevant field
-                    pullurl.Text = grabUrl; // Set the grab URL in the textbox
+                    instanceid.Text = endpointId;
+                    label8.Text = "Youtube URL: " + youtubeUrl;
+                    pullurl.Text = grabUrl;
 
-                    // Display a success message
                     MessageBox.Show("Endpoint created successfully!\nGrab URL: " + grabUrl + "\nTrack URL: " + trackUrl, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
             {
-                MessageBox.Show("There was an error connecting to the API. Please try again later.", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error connecting to the API. The information inputted for generation is either incorrect or the server is down. Please try again later.", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unexpected error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
