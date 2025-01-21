@@ -2,9 +2,12 @@
 
 # SgtGigdi VRCHAT IP Puller
 
+<div>
+    <a href="https://uptime.betterstack.com/?utm_source=status_badge">
+        <img src="https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg" alt="Better Stack Badge">
+    </a>
+    <br>
 </div>
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
-<br>
 
 ## Supported Languages:
 - [x] English
