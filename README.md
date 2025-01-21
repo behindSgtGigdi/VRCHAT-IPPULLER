@@ -3,6 +3,7 @@
 # SgtGigdi VRCHAT IP Puller
 
 <div>
+    <strong>Server Status: </strong>
     <a href="https://uptime.betterstack.com/?utm_source=status_badge">
         <img src="https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg" alt="Better Stack Badge">
     </a>
