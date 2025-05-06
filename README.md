@@ -1,6 +1,6 @@
 <div align="center">
 
-# VRChat Network Analyzer
+# VRChat IP Puller
 
 ![Status Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg)
 
