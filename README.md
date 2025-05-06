@@ -1,33 +1,53 @@
 <div align="center">
 
-# SgtGigdi VRCHAT IP Puller
+# VRChat Network Analyzer
 
-<div>
-    <strong>Server Status: </strong>
-    <a href="https://uptime.betterstack.com/?utm_source=status_badge">
-        <img src="https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg" alt="Better Stack Badge">
-    </a>
-    <br>
+![Status Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1p3c7.svg)
+
+*A professional tool for VRChat IP Pulling*
+
 </div>
 
-## Supported Languages:
-- [x] English
+## Overview
 
-More languages coming soon!
+VRChat IP Puller provides secure endpoints for analyzing network traffic and connections within VRChat. This application is designed to help users understand connection patterns and network performance metrics.
+
+## Features
+
+- Custom endpoint creation
+- API integration
+- Real-time network analysis
+- User-friendly interface
+- Comprehensive data reporting
+
+## Supported Languages
+
+- English (Full Support)
+- *Additional languages coming soon*
+
+## Getting Started
+
+### Access Options
+
+- **Web Interface**: [https://vrchatapi.onrender.com](https://vrchatapi.onrender.com)
+- **API Documentation**: Available after registration
+
+### Installation
+
+1. Join our [Discord community](https://discord.gg/7cyrKZcj8W)
+2. Follow the installation guide provided in the #downloads channel
+3. Configure your settings using the documentation
+
+## Community & Support
+
+- **Discord**: [Join our community](https://discord.gg/7cyrKZcj8W)
+- **Updates**: Beta build available now with regular feature updates
+- **Documentation**: Comprehensive guides available for all features
+
+## Legal Notice
+
+This tool is provided for educational and network diagnostic purposes only. Users are responsible for complying with VRChat's Terms of Service and all applicable laws regarding network monitoring.
 
 ---
 
-## About the Application:
-This tool allows you to create custom endpoints that interact with an API to pull users' IP addresses on VRChat.
-
----
-## Getting Started:
-*⚠️ The Beta Build Is Out Now, but it's not fully finished.*
-
-Join our Discord community to:
-- Get started with the application
-- Access tutorials and guides
-- Receive help and support
-[Join the Discord](https://discord.gg/7cyrKZcj8W)
-- Our API website
-[Here alternatively is the website to also access the API online](https://vrchatapi.onrender.com)
+© 2025 GigdiPullers | All Rights Reserved
